@@ -1,4 +1,4 @@
-username = 'ikhercules@live.com'
-password = 'Lifedata58975897'
+username = ''
+password = ''
 
   

@@ -14,23 +14,28 @@ class Tinderbot():
         self.driver.get('https://tinder.com/')
 
         try:
-            self.driver.find_element_by_xpath("//button[contains(text(), 'More Options')]").click()
+            mre = self.driver.find_element_by_xpath("//button[contains(text(), 'More Options')]")
+            mre.click()
 
-            sleep(2)
+            sleep(5)
 
-            fb = self.driver.find_element_by_xpath('//*[@id="modal-manager"]/div/div/div/div/div[3]/span/div[2]/button').click()
+            fb_btn = self.driver.find_element_by_xpath('//*[@id="modal-manager"]/div/div/div/div/div[3]/span/div[2]/button')
+            fb_btn.click()
         except:
             pass
         try:
-            fb_bt = self.driver.find_element_by_xpath('//*[@id="modal-manager"]/div/div/div/div/div[3]/span/div[2]/button').click()
+            fb_btn2 = self.driver.find_element_by_xpath('//*[@id="modal-manager"]/div/div/div/div/div[3]/span/div[2]/button')
+            fb_btn2.click()
         except:
             pass
         try:
-            fb_bt = self.driver.find_element_by_xpath('//*[@id="modal-manager"]/div/div/div/div/div[3]/span/div[3]/button').click()
+            fb_btn3 = self.driver.find_element_by_xpath('//*[@id="modal-manager"]/div/div/div/div/div[3]/span/div[3]/button')
+            fb_btn3.click()
         except:
             pass
         try:
-            fb_bt = self.driver.find_element_by_xpath('//*[@id="content"]/div/div[1]/div/div/main/div/div[2]/div[2]/div/div/span/div[3]/button').click()
+            fb_btn4 = self.driver.find_element_by_xpath('//*[@id="content"]/div/div[1]/div/div/main/div/div[2]/div[2]/div/div/span/div[3]/button').click()
+            fb_btn4.click()
         except:
             pass
 
